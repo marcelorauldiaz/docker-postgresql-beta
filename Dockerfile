@@ -5,7 +5,7 @@ RUN apt-get update; \
   wget -q https://ftp.postgresql.org/pub/snapshot/dev/postgresql-snapshot.tar.bz2;  
 
 RUN tar xvfj postgresql-snapshot.tar.bz2; \
-  cd postgresql-13devel; \
+  cd postgresql-13beta1; \
   ./configure; \
   make; \
   make install; 
